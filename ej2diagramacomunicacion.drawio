@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-21T15:53:35.369Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="ZhFYXGVwEEJ0ssfkT1di" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-21T16:21:00.023Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="oiVLWg-553st3Xvu7ajE" version="22.1.11" type="github">
   <diagram name="Página-1" id="WICck9pgIeBtj4AcxYeL">
-    <mxGraphModel dx="2069" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2069" dy="1786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,13 +37,13 @@
         <mxCell id="PBhGnh1ifOubgosgx4_8-23" value="1: resultado(flota)&lt;br&gt;2: recorrido(mapa,flota)&lt;br&gt;3: NewickSim(mapa)&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: caminoCorto(mapa)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-183" y="90" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="PBhGnh1ifOubgosgx4_8-14" value="1.1 * [ i = 2 ] : getHP()&lt;br&gt;1.2: getPosicion()&lt;br&gt;&lt;br&gt;2.2:* [ i = 2 ] : setPosicion(mapa.getInicial())&lt;br&gt;2.3 * [ i = 2 ] : getHP()&lt;br&gt;2.4 * [ i = 2 ] :&amp;nbsp;getPosicion()&lt;br&gt;2.7 : setPosicion()&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="260" y="30" width="320" height="130" as="geometry" />
+        <mxCell id="PBhGnh1ifOubgosgx4_8-14" value="1.1 * [ i = 2 ] : getHP()&lt;br&gt;1.2: getPosicion()&lt;br&gt;2.2 : setPosicion(mapa.getInicial())&lt;br&gt;2.3 * [ i = 2 x n ] : getHP()&lt;br&gt;2.4 * [ i = 3 x n ] :&amp;nbsp;getPosicion()&lt;br&gt;2.7 * [ i = n ] : setPosicion(flota.getPosicion().next(flota)&lt;span style=&quot;background-color: initial;&quot;&gt;)&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="60" width="460" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="PBhGnh1ifOubgosgx4_8-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="PBhGnh1ifOubgosgx4_8-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.641;entryY=0.923;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="290" y="180" as="sourcePoint" />
-            <mxPoint x="390" y="180" as="targetPoint" />
+            <mxPoint x="200" y="180" as="sourcePoint" />
+            <mxPoint x="499.8600000000001" y="179.99" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PBhGnh1ifOubgosgx4_8-26" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.1: mapaValido()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3.1: getInicial()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4.1: getInicial()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5: addHijos(padre, hijo)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6: addHijos(padre, hijoIz, hijoDer)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -151,8 +151,8 @@
             <mxPoint x="450" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qtkPWYaVm_F9rMl8UNy9-5" value="1.3 : getName()&lt;br&gt;2.5 : next(flota)&lt;br&gt;2.6 : action(flota)&lt;br&gt;3.2 : Newick()&lt;br&gt;4.2 : caminoCorto(0)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="335" y="230" width="135" height="60" as="geometry" />
+        <mxCell id="qtkPWYaVm_F9rMl8UNy9-5" value="1.3 : getName()&lt;br&gt;2.5 * [&amp;nbsp;i = 2 x n ]&amp;nbsp;: next(flota)&lt;br&gt;2.6 * [ i = n] : action(flota)&lt;br&gt;3.2 : Newick()&lt;br&gt;4.2 : caminoCorto(0)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="339" y="230" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="_7e9RXA1wCkBmxa7xCcD-1" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="PBhGnh1ifOubgosgx4_8-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -161,7 +161,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_7e9RXA1wCkBmxa7xCcD-2" value="3.2.1 : getName()&lt;br&gt;3.2.2 : getBigName()&lt;br&gt;3.3.3 [Bifurcacion *[i=2] || RutaFija] : hijo.Newick()&lt;br&gt;4.2.1 [Bifurcacion *[i=2] || RutaFija] : hijo.caminoCorto(tamCamino)&lt;br&gt;2.1.2.1 [Bifurcacion *[i=2] || RutaFija] : hijo.valido()&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="600" y="530" width="410" height="80" as="geometry" />
+          <mxGeometry x="600" y="540" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_7e9RXA1wCkBmxa7xCcD-4" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;La función recorrido tiene un bucle para recorrer todos los nodos del camino que se vaya siguiendo por lo que las llamadas de dentro se harían n veces siendo n = numero de nodos del camino que se esta recorriendo, tambien dependera el número de ejecuciones del valor HP de la flota&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=center;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-40" width="290" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
